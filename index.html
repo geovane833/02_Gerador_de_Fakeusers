@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Fake-User</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de FakeUsers</h1>
+        <div class="formFakeUser">
+            <label>
+                <input type="radio" name="genero" id="radio" checked value=""/>
+                <span>Aleatório</span>
+            </label>
+            <label>
+                <input type="radio" name="genero" id="radio" value="male"/>
+                <span>Homem</span>
+            </label>
+            <label>
+                <input type="radio" name="genero" id="radio" value="female"/>
+                <span>Mulher</span>
+            </label>
+            <div class="quantidade">
+                <b>Quantidade:</b>
+                <select>
+                    <option value="1">1 Pessoa</option>
+                    <option value="2">2 Pessoas</option>
+                    <option value="3">3 Pessoas</option>
+                    <option value="4">4 Pessoas</option>
+                    <option value="5">5 Pessoas</option>
+                </select>
+            </div>
+            <button class="btn-gerar" onclick="gerarFakeUser()">Gerar Usuário</button>
+        </div>
+        <hr>
+        <div class="allFakeUsers">
+            <div class="fakeuser" style="visibility: hidden">
+                <div class="imagem">
+                    <img src="" id="img" />
+                    <div class="dados">
+                        <p><b>Nome:</b> <span id="nome"></span></p>
+                        <p><b>Email:</b> <span id="email"></span></p>
+                        <p><b>Nascimento:</b> <span id="idade"></span></p>
+                        <p><b>Endereço:</b> <span id="endereco"></span></p>
+                        <p><b>Telefone:</b> <span id="telefone"></span></p>
+                    </div>
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>

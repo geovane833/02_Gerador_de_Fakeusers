@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); 
+/* Importa a fonte 'Poppins' do Google Fonts com pesos 400, 500 e 600. */
+
+* {
+    margin: 0;                                                            /* Remove a margem padrão de todos os elementos. */
+    padding: 0;                                                           /* Remove o preenchimento padrão de todos os elementos. */
+    box-sizing: border-box;                                               /* Inclui padding e bordas no cálculo da largura e altura dos elementos. */
+    font-family: "Poppins", sans-serif;                                   /* Aplica a fonte 'Poppins' em todos os elementos. */
+}
+
+body {
+    margin: 0;                                                           /* Remove a margem padrão do body */
+    padding: 0;                                                          /* Remove o padding padrão do body */
+    background: linear-gradient(135deg, #1e3c72, #2a5298);           /* Aplica um gradiente de fundo diagonal de 135 graus entre dois tons de azul. */
+    color: #fff;                                                       /* Define a cor do texto como branco. */
+    display: flex;                                                       /* Ativa o Flexbox para organizar os itens. */
+    justify-content: center;                                             /* Centraliza horizontalmente o conteúdo. */
+    align-items: center;                                                 /* Centraliza verticalmente o conteúdo. */
+    min-height: 100vh;                                                   /* Garante que o corpo ocupe pelo menos a altura total da janela. */
+}
+
+h1 {
+    font-size: 2rem;                                                     /* Define o tamanho da fonte para 2rem (baseado no tamanho da fonte raiz). */
+    font-weight: 600;                                                    /* Aplica um peso da fonte mais grosso (600). */
+    margin-bottom: 20px;                                                 /* Adiciona uma margem inferior de 20px para separar o título dos próximos elementos.*/
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);                        /* Define um fundo branco semitransparente (10% de opacidade). */
+    margin: 10px;
+    padding: 20px;                                                       /* Define um espaçamento interno de 20px ao redor do conteúdo. */
+    border-radius: 15px;                                                 /* Arredonda os cantos com um raio de 15px. */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);                       /* Adiciona uma sombra ao redor do container. */
+    text-align: center;                                                  /* Centraliza o texto dentro do container. */
+    min-width: 300px;                                                    /* Define uma largura mínima de 300px para o container. */
+    width: auto;                                                         /* Permite que a largura do container se ajuste ao conteúdo. */
+    display: flex;                                                       /* Ativa o Flexbox para o container. */
+    justify-content: center;                                             /* Centraliza horizontalmente o conteúdo. */
+    align-items: center;                                                 /* Centraliza verticalmente o conteúdo. */
+    flex-direction: column;                                              /* Alinha os itens em coluna (verticalmente). */
+}
+
+.formFakeUser {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin: 0;                                                            /* Remove a margem padrão. */
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    max-width: 700px; /* Define a largura máxima do formulário */
+    width: 100%; /* Garante que o formulário ocupe até 100% da largura disponível */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+label {
+    display: flex;                                                       /* Ativa o Flexbox para organizar o conteúdo do label. */
+    align-items: center;                                                 /* Alinha os elementos verticalmente no centro. */
+    gap: 5px;                                                            /* Define um espaço de 5px entre os itens dentro do label. */
+    font-size: 1rem;                                                     /* Define o tamanho da fonte como 1rem. */
+}
+
+.quantidade {
+    display: flex;                                                       /* Ativa o Flexbox para alinhar os itens dentro da div quantidade. */
+    align-items: center;                                                 /* Alinha os itens verticalmente no centro. */
+    gap: 10px;                                                           /* Define um espaço de 10px entre os itens. */
+}
+
+select {
+    padding: 5px;                                                        /* Define 5px de espaçamento interno no select. */
+    border-radius: 8px;                                                  /* Arredonda as bordas com um raio de 8px. */
+    border: none;                                                        /* Remove a borda padrão do select. */
+    background-color: #fff;                                            /* Define a cor de fundo do select como branco. */
+    color: #333;                                                       /* Define a cor do texto como cinza escuro (#333). */
+    font-size: 1rem;                                                     /* Define o tamanho da fonte como 1rem. */
+    cursor: pointer;                                                     /* Muda o cursor para 'pointer' ao passar o mouse sobre o select. */
+}
+
+button.btn-gerar {
+    background-color: #00b4d8;                                         /* Define o fundo do botão como azul (#00b4d8). */
+    color: #fff;                                                       /* Define a cor do texto como branco. */
+    padding: 10px 20px;                                                  /* Define 10px de padding vertical e 20px horizontal. */
+    border: none;                                                        /* Remove a borda padrão do botão. */
+    border-radius: 8px;                                                  /* Arredonda as bordas do botão com um raio de 8px. */
+    cursor: pointer;                                                     /* Muda o cursor para 'pointer' ao passar o mouse sobre o botão. */
+    font-size: 1rem;                                                     /* Define o tamanho da fonte como 1rem. */
+    transition: background-color 0.3s ease;                              /* Adiciona uma transição suave de 0.3s ao mudar a cor de fundo. */
+}
+
+button.btn-gerar:hover {
+    background-color: #0077b6;                                         /* Muda o fundo do botão para um tom de azul mais escuro ao passar o mouse. */
+}
+
+hr {
+    width: 80%;                                                          /* Define a largura da linha horizontal como 80% da tela. */
+    border-color: #00b4d8;                                             /* Define a cor da borda como azul (#00b4d8). */
+    border-width: 1px;                                                   /* Define a espessura da borda como 1px. */
+    margin: 20px auto;                                                   /* Adiciona 20px de margem vertical e centraliza horizontalmente. */
+}
+
+.allFakeUsers {
+    display: flex;                                                       /* Ativa o Flexbox para alinhar os itens da allFakeUsers. */
+    justify-content: center;                                             /* Centraliza os itens horizontalmente. */
+    gap: 20px;                                                           /* Define um espaço de 20px entre os itens. */
+}
+
+.fakeuser {
+    background-color: rgba(255, 255, 255, 0.2);                        /* Define um fundo branco semitransparente (20% de opacidade). */
+    padding: 20px;                                                       /* Adiciona 20px de espaçamento interno. */
+    border-radius: 15px;                                                 /* Arredonda as bordas com um raio de 15px. */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);                       /* Adiciona uma sombra suave ao redor do elemento. */
+    transition: transform 0.3s ease;                                     /* Adiciona uma transição suave de 0.3s ao mudar a posição (transform). */
+}
+
+.fakeuser:hover {
+    transform: translateY(-10px);                                        /* Move o elemento 10px para cima ao passar o mouse. */
+}
+
+.fakeuser p {
+    margin: 10px 0;                                                      /* Adiciona 10px de margem vertical em cada parágrafo dentro do fakeuser. */
+    font-size: 1rem;                                                     /* Define o tamanho da fonte como 1rem. */
+    text-align: left;                                                    /* Alinha o texto à esquerda. */
+}
+
+.imagem {
+    display: flex;                                                       /* Ativa o Flexbox para alinhar a imagem dentro da div imagem. */
+    justify-content: center;                                             /* Centraliza a imagem horizontalmente. */
+    margin-bottom: 10px;                                                 /* Adiciona uma margem inferior de 10px abaixo da imagem. */
+}
+
+img {
+    border-radius: 50%;                                                  /* Faz com que a imagem tenha bordas arredondadas (formato circular). */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);                           /* Adiciona uma sombra suave ao redor da imagem. */
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    .container, .formFakeUser {
+        width: 90%; /* Ajusta a largura do container e do formulário em dispositivos móveis */
+    }
+
+    .allFakeUsers {
+        flex-direction: column; /* Alinha os fake users em coluna em telas menores */
+        gap: 10px; /* Reduz o espaço entre os itens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .fakeuser {
+        padding: 10px; /* Reduz o espaçamento interno dos fake users em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem; /* Ajusta ainda mais o tamanho da fonte em dispositivos muito pequenos */
+    }
+
+    .formFakeUser {
+        flex-direction: column; /* Garante que o formulário se adapte melhor em telas muito pequenas */
+    }
+
+    button.btn-gerar {
+        padding: 8px 16px; /* Ajusta o padding do botão em dispositivos menores */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte do botão */
+    }
+}
