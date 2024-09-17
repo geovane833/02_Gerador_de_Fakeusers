@@ -3,7 +3,6 @@
 Este projeto é um gerador de usuários fictícios, que utiliza a API [Random User Generator](https://randomuser.me/api/) para criar perfis de usuários aleatórios. A interface permite gerar um novo usuário ao clicar em um botão e exibe informações como imagem, nome, email, data de nascimento, endereço e telefone.
 
 ## Imagens
-![alt text](image.png)
 ![alt text](image-1.png)
 
 ## Tecnologias Utilizadas
